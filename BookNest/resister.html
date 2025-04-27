@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest - Register</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Create an Account</h2>
+        <form action="register.php" method="POST">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gmail">Gmail</label>
+            <input type="email" id="gmail" name="gmail" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+            <p class="register-link">Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+    </div>
+</body>
+</html>
